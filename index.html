@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Segurança</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <p class="eyebrow">ARCANA SECURITY LABORATORY</p>
+
+        <h1>Verificador de Segurança</h1>
+
+        <p>Uma investigação sobre a exposição de dados e as defesas da web.</p>
+    </header>
+
+    <main>
+        <section class="cartao">
+            <h2>Analisador de cabeçalhos HTTP</h2>
+            <p>Verifique as configurações de segurança de um site.</p>
+
+            <label for="urlSite">URL do site</label>
+            <input type="url" id="urlSite" placeholder="https://exemplo.com">
+
+            <button id="analisarSite">Analisar site</button>
+
+            <div id="resultadoSite" aria-live="polite">
+                Aguardando análise.
+            </div>
+        </section>
+
+        <section class="cartao">
+            <h2>Verificador de e-mail</h2>
+            <p>Consulte a exposição de um endereço em vazamentos conhecidos.</p>
+
+            <label for="email">Endereço de e-mail</label>
+            <input type="email" id="email" placeholder="voce@exemplo.com">
+
+            <button id="verificarEmail">Verificar e-mail</button>
+
+            <div id="resultadoEmail" aria-live="polite">
+                Aguardando consulta.
+            </div>
+        </section>
+
+        <section class="cartao">
+            <h2>Verificador de senhas</h2>
+            <p>Consulte a base Pwned Passwords sem enviar a senha original.</p>
+
+            <label for="senha">Senha para verificar</label>
+            <input type="password" id="senha" placeholder="Digite uma senha" autocomplete="off">
+
+            <button id="verificarSenha">Verificar senha</button>
+
+            <div id="resultadoSenha" aria-live="polite">
+                Aguardando consulta.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto acadêmico de auditoria de segurança.</p>
+    </footer>
+
+    <script src="renderer.js"></script>
+</body>
+
+</html>
